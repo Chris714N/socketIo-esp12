@@ -4,10 +4,10 @@ Proyecto para obtener datos de sensor mediante socket.io, utilizando Node.js com
 
 ## librerias Arduino ESP12-E
 
-SocketIoClient.h
-md5.h
-TaskScheduler.h
-math.h
+* SocketIoClient.h
+* md5.h
+* TaskScheduler.h
+* math.h
 
 
 
