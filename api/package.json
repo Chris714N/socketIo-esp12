@@ -1,0 +1,21 @@
+{
+  "name": "simple_iot",
+  "version": "0.0.1",
+  "description": "Server Socket.IO",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ESP12",
+    "Express",
+    "Socket.IO"
+  ],
+  "author": "Christian Andres",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "moment": "^2.22.2",
+    "socket.io": "^2.1.1"
+  }
+}

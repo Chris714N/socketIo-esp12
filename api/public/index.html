@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Socke.IO && ESP12E = IOT</title>
+	<link rel="stylesheet" href="/chat.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		#Cuadrado {
+			width: 50px;
+			height: 50px;
+			background: #2980b9;
+			border-color: #FF622C;
+			border-style: solid;
+			border-radius: 5px;
+			position: relative;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<label>id SoC:
+				<label id="idSoc"></label>
+			</label>
+		</div>
+
+		<div class="row">
+			<label>MAC Acces Point:
+				<label id="macAp"></label>
+			</label>
+		</div>
+		<div class="row">
+			<label>id Flash:
+				<label id="idFlash"></label>
+			</label>
+		</div>
+
+		<div class="row">
+			<label>MAC Cliente:
+				<label id="macClient"></label>
+			</label>
+		</div>
+
+		<div class="row">
+			<label>distancia:
+				<label id="data"></label> cm</label>
+		</div>
+
+		<div class="row">
+			<label>hora:
+				<label id="now"></label>
+			</label>
+		</div>
+	</div>
+
+	<div class="container">
+
+			<div class="col-sm-2">
+				<div>
+					<img src="https://3.bp.blogspot.com/-SOkvuXqhy8o/V3kmU_5t4AI/AAAAAAAAB2I/Q8-sbSXqVfksZi-592MlVVu1yUDUcFuGgCLcB/s320/hc_sr04.png"
+					 style="max-width:80%;width:auto;height:auto;">
+				</div>
+			</div>
+			<div class="col-sm-10">
+				<div>
+					<div id="Cuadrado"></div>
+				</div>
+			</div>
+
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<form id="chat-form">
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="message-text" autocomplete="off" required>
+				</div>
+				<div class="col-sm-6">
+					<button class="btn btn-success">Enviar</button>
+				</div>
+		</div>
+
+		</form>
+	</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/chat.js"></script>
+</body>
+
+</html>
